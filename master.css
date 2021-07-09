@@ -7,25 +7,32 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, sans-serif;
+  width: 100%;
+  font-family: 'Shining_star';
   line-height: 1.5;
   text-align: center;
 }
 html {
   height: 100%;
-  background: #FFC947;
+  background: midnightblue;
 }
 body {
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 main {
-  height: 100%;
+  height: 56%;
+  background: #FFC947;
+  scroll-snap-type: both mandatory;
+  overflow-y: scroll;
+  border-radius: 1rem;
 }
 article {
   height: 100%;
-
-  -webkit-scroll-snap-align: start;
-  scroll-snap-align: start;
+  -webkit-scroll-snap-align: center;
+  scroll-snap-align: center;
 
   display: flex;
   justify-content: center;
@@ -40,6 +47,18 @@ section {
   justify-content: center;
   align-items: center;
 }
-.scr {
-  font-family: 'Shining_star';
+section a {
+  text-decoration: none;
+}
+section iframe {
+  height: 57%;
+}
+section span {
+  font-size: 2.5rem;
+}
+section.int {
+  color: darkviolet;
+}
+section.fav {
+  color: crimson;
 }
